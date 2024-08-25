@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>HOTEL BOOKING </title>
+        <style>
+            body{
+                font-family:Arial,sans-serif;
+                margin:0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            header{
+                background-color: #333;
+                color: white;
+                padding: 10px 0;
+                text-align: center;
+            }
+            nav a {
+                color: white;
+                margin: 0 15px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .hero{
+                background-color: #555;
+                color: white;
+                padding: 50px 20px;
+                text-align: center;
+            }
+            .hero h2{
+                margin: 0;
+            }
+            .btn{
+                background-color: #e67e22;
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                margin-top: 15px;
+                display: inline-block;
+            }
+            .btn:hover{
+                background-color: #d35400;
+            }
+            footer{
+                background-color: #333;
+                color: white;
+                text-align: center; 
+                padding: 10px 0;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to Our Hotel Chaithra</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="rooms.html">Rooms</a>
+                <a href="bookig.html">Book Now</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+        <section class="hero">
+            <h2>Your Comfort is Our Priority</h2>
+            <p>Book a room with us today and enjoy luxurious amenities</p>
+            <a href="booking.html"class="btn">Book Now</a>
+        </section>
+        <footer>
+            <p>&copy;2024 Hotel Booking.All rights reserved.</p>
+        </footer>
+        <script>
+            const rooms=[
+                {
+                    "id":1.
+                    "name":"Deluxe Rooms",
+                    "price":200,
+                    "amenities":["Free WIFI","TV","Mini Bar"],
+                    "avliability":true   
+                },
+                {
+                   "id":2.
+                    "name":"Suite",
+                    "price":350,
+                    "amenities":["Free WIFI","TV","Mini Bar","Jacuzzi"],
+                    "avliability":false
+                },
+                {
+                    "id":3.
+                    "name":"Standard Rooms",
+                    "price":150,
+                    "amenities":["Free WIFI","TV",],
+                    "avliability":true
+                }
+            ];
+            function checkAvailability(){
+                let availableRooms=rooms.filter(rooms=>room.availability);
+                availableRooms.forEach(room=>{
+                    console.log(${rooms,name}is available at $${rooms.price}per night);
+                });
+            }
+            checkAvailability();
+        </script>
+    </body>
+</html>
